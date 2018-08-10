@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ArithmeticOperations</string>
+    <string name="maths_function">Maths Function</string>
+    <string name="sum_addition">Sum/Addition</string>
+    <string name="subtraction">Subtraction</string>
+    <string name="division">Division</string>
+    <string name="multiplication">multiplication</string>
+</resources>

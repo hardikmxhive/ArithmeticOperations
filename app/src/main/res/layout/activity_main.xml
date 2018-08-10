@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/maths_function"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <EditText
+        android:id="@+id/editText1"
+        android:hint="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:hint="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/editText1"/>
+
+    <Button
+        android:id="@+id/buttonsum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sum_addition"
+        app:layout_constraintTop_toBottomOf="@id/editText2"/>
+
+    <Button
+        android:id="@+id/buttonsub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/subtraction"
+        app:layout_constraintTop_toBottomOf="@id/buttonsum"/>
+
+    <Button
+        android:id="@+id/buttondiv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/division"
+        app:layout_constraintTop_toBottomOf="@id/buttonsub"/>
+
+    <Button
+        android:id="@+id/buttonmul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/multiplication"
+        app:layout_constraintTop_toBottomOf="@id/buttondiv"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:layout_constraintTop_toBottomOf="@id/buttonmul"/>
+
+</android.support.constraint.ConstraintLayout>
