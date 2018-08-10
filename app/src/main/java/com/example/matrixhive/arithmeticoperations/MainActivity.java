@@ -29,12 +29,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         etv2 = findViewById(R.id.editText2);
         result = findViewById(R.id.textView1);
 
-
         btnsum.setOnClickListener(this);
         btnsub.setOnClickListener(this);
         btndiv.setOnClickListener(this);
         btnmul.setOnClickListener(this);
-
     }
 
     @Override
